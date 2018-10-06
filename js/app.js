@@ -14,7 +14,7 @@ var Place = function(data) {
     'iconAnchor' :   [15, 34],
     'popupAnchor' :  [0, -30],
     'className' : 'icon-id',
-    'html' : '<img id="' + getID(data.name) + '" class="icon-id" src="' + this.icon + '" alt="" onClick=animateIcon("' + getID(data.name) + '")>'
+    'html' : '<img id="' + getID(data.name) + '" class="hide icon-id" src="' + this.icon + '" alt="" onClick=animateIcon("' + getID(data.name) + '")>'
   });
 
   this.marker = L.marker(self.coordinates, {
@@ -30,7 +30,7 @@ var Place = function(data) {
 }
 
 // ViewModel
-var ViewModel = function(){
+var ViewModel = function() {
   let self = this;
 
   this.placeTypes = ko.observableArray(PlaceTypesModel);

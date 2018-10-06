@@ -28,7 +28,9 @@
     width: 30vw;
   }
   footer {
-    padding-top: 200px;
+    position: relative;
+    top: 250px;
+    padding: 25px;
   }
 }
 
@@ -64,5 +66,17 @@
 footer {
   display: block;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.gone {
+  display: none;
 }

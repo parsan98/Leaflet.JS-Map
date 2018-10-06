@@ -1,6 +1,6 @@
 # A Leaflet.JS Map of London
 
-This is a one page JavaScript app using Map-Box API, Leaflet.JS and Knockout.JS. Details for the locations are obtained using asynchronous Wikipedia API calls. The locations themselves are hardcoded in the model.
+This is a one page JavaScript app using  Leaflet.JS and Knockout.JS. Details for the locations are obtained using asynchronous Wikipedia API calls and the map is obtained from MapBox. The locations themselves are hardcoded in the model.
 
 
 
@@ -29,7 +29,7 @@ The required JavaScript libraries have been included in `js/lib` directory. Howe
 * Images have been included in the folder `/img/` .
 * The markers for the map have been animated using CSS.
 * This page is designed to be responsive to display on all conventional PC, mobile and tablet screens.
-* The API providers used do not (as of Sept 2018) require API keys or client side secrets.
+* The API providers used do not (as of Sept 2018) require payment or credit card info.
 * This project is released under Unlicense.
 
 

@@ -15,7 +15,6 @@ function dowiki(placeName){
       var items = [];
       $.each(jsondata , function(jsonKey, jsonVal) {
         if (jsonKey == "query") {
-            console.log(jsonVal.search[0]);
                 items.push("<div class='border p-3 border-secondary rounded m-1'>" +
                 "<a href='https://en.wikipedia.org/wiki/" +
                 jsonVal.search[0].title.replace(/ /g,"_") +
