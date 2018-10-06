@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- General -->
+  <title> London </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/palace.png">
+
+  <!-- BootStrap CSS -->
+  <link rel="stylesheet" href="js/lib/bootstrap.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="js/lib/leaflet/leaflet.css"/>
+  <script src="js/lib/leaflet/leaflet.js"></script>
+
+</head>
+
+<body class="p-3">
+
+  <h1> London </h1>
+  <h2> A Tourists' Map </h2>
+  <hr class="bg-primary">
+
+  <div id="results">
+  <!-- Map Display -->
+  <div class="border border-secondary" id="map"></div>
+  <ul class="list-group m-2" id="wikipedia-links" data-bind="html: wikiElem"></ul>
+  </div>
+
+  <div class="form form-group m-2" id="listLocations">
+    <!-- Filter Dropdown -->
+    <div class="form m-2">
+      <label for="type-filter"> Filter by Type </label>
+      <select class="form-control dropdown border-primary" id="type-filter" data-bind="options: placeTypes, optionsText: 'name', optionsValue: 'name', value: selectedPlaceType, optionsCaption: 'All'"></select>
+    </div>
+    <!-- List of places -->
+      <div class="list-group m-2" data-bind="foreach: filteredPlaces">
+        <div class="list-group-item list-group-item-action" data-bind="click: placeClicked">
+          <img alt="type-icon" src="img/museum.png" data-bind="attr: { src: icon }">
+          <span data-bind="text: name"></span>
+        </div>
+      </div>
+  </div>
+
+  <footer>
+    <hr class="bg-primary">
+    <span>PS &copy; </span>
+    <span data-bind="text: thisYear"></span>
+  </footer>
+
+  <!-- Knockout -->
+  <script src="js/lib/knockout-3.2.0.js"></script>
+  <!-- JQuery -->
+  <script src="js/lib/jquery.min.js"></script>
+  <!-- App Scripts -->
+  <script src="js/model.js"></script>
+  <script src="js/wikiAPI.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
