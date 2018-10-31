@@ -1,4 +1,5 @@
 # A Leaflet.JS Map of London
+Live page at https://parvathy-santhosh.github.io/Leaflet.JS-Map/
 
 This is a one page JavaScript app using  Leaflet.JS and Knockout.JS. Details for the locations are obtained using asynchronous Wikipedia API calls and the map is obtained from MapBox. The locations themselves are hardcoded in the model.
 
